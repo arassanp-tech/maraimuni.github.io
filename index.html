@@ -7,6 +7,7 @@
     <!-- Lien vers Google Fonts pour une typographie élégante -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
 </head>
 <body>
 
@@ -35,12 +36,36 @@
         <h2>Galerie</h2>
         <div class="grid-galerie">
             <!-- Remplacez photo1.jpg, photo2.jpg, etc. par les noms de vos images -->
-            <div class="card"><img src="Middle finger.jpeg" alt="Photo doigt"></div>
-            <div class="card"><img src="maray soleil.jpeg" alt="Photo reflet soleil"></div>
-            <div class="card"><img src="maray-beach.jpeg" alt="Photo plage"></div>
-            <div class="card"><img src="maray-bench.jpeg" alt="Photo plein pied"></div>
-            <div class="card"><img src="Casquette.jpeg" alt="Photo casquette"></div>
-            <div class="card"><img src="Jawline.jpeg" alt="Photo paysage"></div>
+            <div class="card">
+                <a href="Middle finger.jpeg" data-lightbox="galerie" data-title="Photo 1 - Photo doigt">
+                    <img src="Middle finger.jpeg" alt="Photo doigt">
+                </a>
+            </div>
+            <div class="card">
+                <a href="maray soleil.jpeg" data-lightbox="galerie" data-title="Photo 2 - Photo reflet soleil">
+                    <img src="maray soleil.jpeg" alt="Photo reflet soleil">
+                </a>
+            </div>
+            <div class="card">
+                <a href="maray-beach.jpeg" data-lightbox="galerie" data-title="Photo 3 - Photo plage">
+                    <img src="maray-beach.jpeg" alt="Photo plage">
+                </a>
+            </div>
+            <div class="card">
+                <a href="maray-bench.jpeg" data-lightbox="galerie" data-title="Photo 4 - Photo plein pied">
+                    <img src="maray-bench.jpeg" alt="Photo plein pied">
+                </a>
+            </div>
+            <div class="card">
+                <a href="Casquette.jpeg" data-lightbox="galerie" data-title="Photo 5 - Photo casquette">
+                    <img src="Casquette.jpeg" alt="Photo casquette">
+                </a>
+            </div>
+            <div class="card">
+                <a href="Jawline.jpeg" data-lightbox="galerie" data-title="Photo 6 - Photo paysage">
+                    <img src="Jawline.jpeg" alt="Photo paysage">
+                </a>
+            </div>
         </div>
     </section>
 
@@ -69,6 +94,6 @@
         </div>
         <p class="copyright">&copy; 2026 Tout réservé.</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
